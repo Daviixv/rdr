@@ -1,0 +1,101 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14.5px;
+}
+
+.my-page{
+	width: 600px;
+	background: #f5f5f5;
+	margin: 0 auto;
+	height: 380px;
+}
+
+.container{
+	width: 505px;
+	margin: 0 auto;
+}
+
+.my-page-info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.my-page-photo{
+	text-align: center;
+	margin-top: 15px;
+	margin-left: 50px;
+}
+
+.my-page-photo img{
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+}
+
+.my-page-photo p{
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+.about-me span{
+	color: #fff;
+	padding: 3px;
+	margin-left: 4px;
+	border-radius: 3px;
+	background: #32bcaf;
+}
+
+.about-me h1{
+	padding: 0;
+	margin: 0;
+	margin-top: 40px;
+}
+
+.about-me p{
+	padding: 5px;
+}
+
+.digits{
+	margin-top: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.digits-info{
+	text-align: center;
+	margin-left: 20px;
+}
+
+.digits-info h1, p{
+	margin: 0;
+	padding: 0;
+}
+
+.digits-info button{
+	cursor: pointer;
+	outline: none;
+	margin-top: 15px;
+	width: 140px;
+	height: 30px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+
+.first{
+	background: #5bb760;
+}
+
+.second{
+	background: #5bc0de;
+}
+
+.third{
+	background: #408bcc;
+}
