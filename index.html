@@ -2,51 +2,239 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Domashka</title>
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width">
+	<title>Sass project</title>
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
-	<div class="my-page">
-		<div class="container">
-			<div class="my-page-info">
-				<div class="about-me">
-					<h1>Давлет Чоров</h1>
-					<p><b>Обо мне:</b> Программист.</p>
-					<p><b>Хобби:</b> Астрономия, Робототехника, Плавание</p>
-					<p><b>Знания:</b><span>HTML5</span><span>CSS</span><span>Python</span><span>C++</span></p>
-				</div>
-				<div class="my-page-photo">
-					<img src="img/nightmare.jpg" alt="photo">
-					<p>
-						Рейтинг <i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star" aria-hidden="true"></i>
-						<i class="fa fa-star-o" aria-hidden="true"></i>
-					</p>
+	<div class="wrapper">
+		<header class="header">
+			<div class="top-line">
+				<div class="container">
+					<div class="logo"><a href="#" class="logo__link">singolo</a></div>
+					<nav class="top-nav">
+					
+						<div class="hamburger hamburger--collapse">
+							<div class="hamburger-box">
+								<div class="hamburger-inner"></div>
+							</div>
+						</div>
+
+						<menu class="top-nav__list">
+							<li class="top-nav__item active"><a href="#" class="top-nav__link">home</a></li>
+							<li class="top-nav__item"><a href="#" class="top-nav__link">services</a></li>
+							<li class="top-nav__item"><a href="#" class="top-nav__link">portfolio</a></li>
+							<li class="top-nav__item"><a href="#" class="top-nav__link">about</a></li>
+							<li class="top-nav__item"><a href="#" class="top-nav__link">contact</a></li>
+						</menu>
+					
+					</nav>
 				</div>
 			</div>
-			<hr>
-			<div class="digits">
-				<div class="digits-info">
-					<h1>7,5B</h1>
-					<p>Подписчиков</p>
-					<button class="first"><i class="fa fa-plus-circle" aria-hidden="true"></i> Подписаться</button>
+
+			<div class="slider">
+				<div class="container">
+					<div class="slider__item">
+						<div class="slider__img-wrap">
+							<img src="img/phone-vertical.png" alt="phone-vertical" class="slider__img">
+						</div>
+						<div class="slider__img-wrap">
+							<img src="img/phone-horz.png" alt="phone-horizontal" class="slider__img">
+						</div>
+					</div>
 				</div>
-				<div class="digits-info">
-					<h1>0</h1>
-					<p>Фотографий</p>
-					<button class="second"><i class="fa fa-user" aria-hidden="true"></i> Профиль</button>
+			</div>
+
+
+		</header>
+
+		<div class="ourserv">
+			<div class="container">
+				<h3 class="ourserv_heading">Our Services</h3>
+				<div class="ourserv_desk">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
+				<div class="ourserv__list">
+					<div class="ourserv__list_items">
+						<div class="ourserv__list_icon"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+						<div class="ourserv__list_text">
+							<h3>Custom Design</h3>
+							<p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+						</div>
+					</div>
 				</div>
-				<div class="digits-info">
-					<h1>1</h1>
-					<p>Домашка</p>
-					<button class="third"><i class="fa fa-cog" aria-hidden="true"></i> Опции</button>
+				<div class="ourserv__list">
+					<div class="ourserv__list_items">
+						<div class="ourserv__list_icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+						<div class="ourserv__list_text">
+							<h3>Inovative Ideas</h3>
+							<p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+						</div>
+					</div>
+				</div>
+				<div class="ourserv__list">
+					<div class="ourserv__list_items">
+						<div class="ourserv__list_icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></div>
+						<div class="ourserv__list_text">
+							<h3>Love Is The Answer</h3>
+							<p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+						</div>
+					</div>
+				</div>
+				<div class="ourserv__list">
+					<div class="ourserv__list_items">
+						<div class="ourserv__list_icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+						<div class="ourserv__list_text">
+							<h3>Responsive Layout</h3>
+							<p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+						</div>
+					</div>
+				</div>
+				<div class="ourserv__list">
+					<div class="ourserv__list_items">
+						<div class="ourserv__list_icon"><i class="fa fa-comment-o" aria-hidden="true"></i></div>
+						<div class="ourserv__list_text">
+							<h3>24/7 Support</h3>
+							<p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+						</div>
+					</div>
+				</div>
+				<div class="ourserv__list">
+					<div class="ourserv__list_items">
+						<div class="ourserv__list_icon"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+						<div class="ourserv__list_text">
+							<h3>Feel Like A Star</h3>
+							<p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
+
+		<div class="port">
+			<div class="container">
+				<h3 class="port__heading heading">Portfolio</h3>
+				<div class="port_desk">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+				</div>
+				<ul class="port-choose">
+					<li class="port-choose__item"><a href="#" class="port-choose__link">All</a></li>
+					<li class="port-choose__item"><a href="#" class="port-choose__link">Web Design</a></li>
+					<li class="port-choose__item"><a href="#" class="port-choose__link">Graphic Design</a></li>
+					<li class="port-choose__item"><a href="#" class="port-choose__link">Artwork</a></li>
+				</ul>
+
+				<ul class="port__list">
+					<li class="port__item"><img src="img/portfolio/port1.jpg" alt="port1"></li>
+					<li class="port__item"><img src="img/portfolio/port2.jpg" alt="port2"></li>
+					<li class="port__item"><img src="img/portfolio/port3.jpg" alt="port3"></li>
+					<li class="port__item"><img src="img/portfolio/port4.jpg" alt="port4"></li>
+					<li class="port__item"><img src="img/portfolio/port5.jpg" alt="port5"></li>
+					<li class="port__item"><img src="img/portfolio/port6.jpg" alt="port6"></li>
+					<li class="port__item"><img src="img/portfolio/port7.jpg" alt="port7"></li>
+					<li class="port__item"><img src="img/portfolio/port8.jpg" alt="port8"></li>
+					<li class="port__item"><img src="img/portfolio/port9.jpg" alt="port9"></li>
+					<li class="port__item"><img src="img/portfolio/port10.jpg" alt="port10"></li>
+					<li class="port__item"><img src="img/portfolio/port11.jpg" alt="port11"></li>
+					<li class="port__item"><img src="img/portfolio/port12.jpg" alt="port12"></li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="aboutus">
+			<div class="container">
+				<h3 class="aboutus_heading">About Us</h3>
+				<div class="aboutus_desk">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
+				<ul class="aboutus__list">
+					<li class="aboutus__item">
+						<img src="img/face1.jpg" alt="face1">
+						<h4>Adam Jensen</h4>
+						<p>Quisque luctus, quam eget molestie commodo, lacus purus<br> cursus purus, nec rutrum tellus dolor id lorem.</p>
+						<div class="aboutus__item_icons">
+							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-get-pocket" aria-hidden="true"></i></a>
+						</div>
+					</li>
+					<li class="aboutus__item">
+						<img src="img/face2.jpg" alt="face2">
+						<h4>Desmond Miles</h4>
+						<p>Quisque luctus, quam eget molestie commodo, lacus purus<br> cursus purus, nec rutrum tellus dolor id lorem.</p>
+						<div class="aboutus__item_icons">
+							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-get-pocket" aria-hidden="true"></i></a>
+						</div>
+					</li>
+					<li class="aboutus__item">
+						<img src="img/face3.jpg" alt="face3">
+						<h4>Skolari Visari</h4>
+						<p>Quisque luctus, quam eget molestie commodo, lacus purus<br> cursus purus, nec rutrum tellus dolor id lorem.</p>
+						<div class="aboutus__item_icons">
+							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-get-pocket" aria-hidden="true"></i></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<form class="form">
+			<div class="container">
+				<h3 class="form_heading">Get a Quote</h3>
+				<p class="form_desk">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+				<div class="form_inputs">
+					<input type="text" class="form_inputs_sm" placeholder="Name (Required)">
+					<input type="text" class="form_inputs_sm" placeholder="Email (Required">
+					<input type="text" class="form_inputs_sm" placeholder="Subject">
+					<input type="text" class="form_inputs_lg" placeholder="Discribe your project in detail...">
+					<input type="submit" class="form_inputs_submit" value="Send">
+				</div>
+
+				<div class="form_contact-info">
+					<h3 class="form_contact-info_heading">Contact Information</h3>
+					<p class="form_contact-info_desk">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+					<p class="form_contact-info_desk2">
+						<i class="fa fa-map-marker" aria-hidden="true"></i> Elm St. 14/05 Lost City<br>
+						<i class="fa fa-phone" aria-hidden="true"></i> 03528 331 86 35<br>
+						<i class="fa fa-envelope-o" aria-hidden="true"></i> info@singolo.com
+					</p>
+				</div>
+			</div>
+		</form>
+
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__rights">© Copyright 2013 • by <a href="#">PSDchat.com</a></div>
+				<div class="footer__socials_icons">
+					<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-get-pocket" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</footer>
 	</div>
+
+
+	<script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  var mobileNav = document.querySelector(".top-nav__list");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    mobileNav.classList.toggle("show");
+    // Do something else, like open/close menu
+  });
+</script>
 </body>
 </html>
